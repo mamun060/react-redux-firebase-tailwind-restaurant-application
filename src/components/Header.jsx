@@ -43,7 +43,7 @@ const Header = () => {
     }
 
     return ( 
-        <header className="w-screen fixed z-50 p-3 px-8 md:p-6 md:px-16">
+        <header className="w-screen fixed z-50 p-3 md:p-6 md:px-16">
            {/* Desktop & table menu */}
            <div className="hidden md:flex w-full h-full justify-between items-center">
                <Link to={'/'} className="flex items-center gap-2">
@@ -105,7 +105,15 @@ const Header = () => {
            </div>
 
            {/* Mobile menu */}
-           <div className=" flex items-center justify-between md:hidden w-full">
+           <div className="flex items-center justify-between md:hidden w-full">
+
+                <div className='relative flex items-center justify-center'>
+                    <MdShoppingBasket  className='text-textColor text-2xl ml-8 cursor-pointer'/>
+                    <div className="absolute -top-2 -right-2 w-5 h-5 rounded-full bg-cartNumBg flex items-center justify-center">
+                        <p className='text-xs text-white font-semibold'>2</p>
+                    </div>
+                </div>
+                
                 <Link to={'/'} className="flex items-center gap-2">
                    <img className='w-8 object-cover' src={logo} alt="Logo" />
                    <p className='text-headingColor text-xl font-bold'>City</p>
