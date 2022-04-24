@@ -26,10 +26,49 @@ export const heroData = [
         imageSrc: C3
     },
     {
-        id: 1,
+        id: 4,
         name: 'Fish Kebab',
         desp: 'Mixed Kebab Plate',
         price: '8.25',
         imageSrc: Fi1
     }
+]
+
+
+export const categories = [
+    {
+        id: 1,
+        name: 'Chicken',
+        urlParamName: "chicken"
+    },
+    {
+        id: 2,
+        name: 'Curry',
+        urlParamName: "beef"
+    },
+    {
+        id: 3,
+        name: 'Rice',
+        urlParamName: "rice"
+    },
+    {
+        id: 4,
+        name: 'Fish',
+        urlParamName: "fish"
+    },
+    {
+        id: 5,
+        name: 'Fruits',
+        urlParamName: "fruits"
+    },
+    {
+        id: 6,
+        name: 'Icecream',
+        urlParamName: "icecream"
+    },
+    {
+        id: 7,
+        name: 'Soft Drinks',
+        urlParamName: "drink"
+    },
 ]
